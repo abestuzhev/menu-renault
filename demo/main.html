@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta charset="utf-8">
+
+<title>SlickNav Demo - Responsive Mobile Nav Plugin for jQuery</title>
+
+
+<link rel="stylesheet" href="../dist/slicknav.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+<p><b>Resize browser to view mobile menu</b></p>
+
+
+<div class="container">
+  <ul class="nav" id="menu">
+    <li class="nav__list"><a href="#" class="nav__link">Автомобили</a>
+      <ul class="sub-nav">
+        <li class="sub-nav__list"><a href="#" class="sub-nav__link">Легковые автомобили</a>
+          <ul class="sub-nav-2">
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link-2">Logan</a>
+              <ul class="car-model">
+                <li href="#" class="car-model__item">
+                  <a href="#"><img class="car-model__img" src="img/logan.png" alt="logan"></a>
+                  <a href="#" class="car-model__link">Logan New <br>от 359 000 рублей**</a>
+                </li>
+                <li href="#" class="car-model__item">
+                  <a href="#"><img class="car-model__img" src="img/logan-old.png" alt="logan"></a>
+                  <a href="#" class="car-model__link">Logan New <br>от 359 000 рублей**</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link">Duster</a></li>
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link">Sandero</a></li>
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link">Fluence</a></li>
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link">Megane</a></li>
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link">Koleos</a></li>
+            <li class="sub-nav__list"><a href="#" class="sub-nav__link">Kangoo</a></li>
+          </ul>
+        </li>
+        <li class="sub-nav__list"><a href="#" class="sub-nav__link">Коммерческий транспорт</a></li>
+        <li class="sub-nav__list"><a href="#" class="sub-nav__link">Автомобили в наличии</a></li>
+        <li class="sub-nav__list"><a href="#" class="sub-nav__link">Автомобили с пробегом</a></li>
+      </ul>
+    </li>
+    <li class="nav__list"><a href="#" class="nav__link">Акции</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">Услуги</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">Сервис и запчасти</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">Корпоративным клиентам</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">Кредит</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">Новости</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">О компании</a></li>
+    <li class="nav__list"><a href="#" class="nav__link">Контакты</a></li>
+  </ul>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
